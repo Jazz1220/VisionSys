@@ -1,0 +1,1298 @@
+==27510== Memcheck, a memory error detector
+==27510== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==27510== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==27510== Command: ./Test.out --record-eventlog=false --debug-on-errors=false
+==27510== Parent PID: 3067
+==27510== 
+==27510== Conditional jump or move depends on uninitialised value(s)
+==27510==    at 0x482E300: malloc (vg_replace_malloc.c:213)
+==27510==    by 0x4003F1F: local_strdup (dl-load.c:162)
+==27510==    by 0x4006335: _dl_map_object (dl-load.c:2538)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F519E1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== Use of uninitialised value of size 4
+==27510==    at 0x401208C: memcpy (memcpy_impl.S:342)
+==27510==    by 0x4006335: _dl_map_object (dl-load.c:2538)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F519E1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== Use of uninitialised value of size 4
+==27510==    at 0x40120B0: memcpy (memcpy_impl.S:352)
+==27510==    by 0x4006335: _dl_map_object (dl-load.c:2538)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F519E1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== Use of uninitialised value of size 4
+==27510==    at 0x40120B4: memcpy (memcpy_impl.S:352)
+==27510==    by 0x4006335: _dl_map_object (dl-load.c:2538)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F519E1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== Use of uninitialised value of size 4
+==27510==    at 0x4012120: memcpy (memcpy_impl.S:358)
+==27510==    by 0x4006335: _dl_map_object (dl-load.c:2538)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F519E1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== Use of uninitialised value of size 4
+==27510==    at 0x4012128: memcpy (memcpy_impl.S:362)
+==27510==    by 0x4006335: _dl_map_object (dl-load.c:2538)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F519E1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== Conditional jump or move depends on uninitialised value(s)
+==27510==    at 0x4830B1C: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x4007E81: _dl_new_object (dl-object.c:75)
+==27510==    by 0x40040F5: _dl_map_object_from_fd (dl-load.c:1059)
+==27510==    by 0x400638B: _dl_map_object (dl-load.c:2605)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F519E1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== Use of uninitialised value of size 4
+==27510==    at 0x401208C: memcpy (memcpy_impl.S:342)
+==27510==    by 0x4007EA9: _dl_new_object (dl-object.c:87)
+==27510==    by 0x40040F5: _dl_map_object_from_fd (dl-load.c:1059)
+==27510==    by 0x400638B: _dl_map_object (dl-load.c:2605)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F519E1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== Use of uninitialised value of size 4
+==27510==    at 0x40120B0: memcpy (memcpy_impl.S:352)
+==27510==    by 0x4007EA9: _dl_new_object (dl-object.c:87)
+==27510==    by 0x40040F5: _dl_map_object_from_fd (dl-load.c:1059)
+==27510==    by 0x400638B: _dl_map_object (dl-load.c:2605)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F519E1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== Use of uninitialised value of size 4
+==27510==    at 0x40120B4: memcpy (memcpy_impl.S:352)
+==27510==    by 0x4007EA9: _dl_new_object (dl-object.c:87)
+==27510==    by 0x40040F5: _dl_map_object_from_fd (dl-load.c:1059)
+==27510==    by 0x400638B: _dl_map_object (dl-load.c:2605)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F519E1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== Use of uninitialised value of size 4
+==27510==    at 0x4012120: memcpy (memcpy_impl.S:358)
+==27510==    by 0x4007EA9: _dl_new_object (dl-object.c:87)
+==27510==    by 0x40040F5: _dl_map_object_from_fd (dl-load.c:1059)
+==27510==    by 0x400638B: _dl_map_object (dl-load.c:2605)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F519E1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== Use of uninitialised value of size 4
+==27510==    at 0x4012128: memcpy (memcpy_impl.S:362)
+==27510==    by 0x4007EA9: _dl_new_object (dl-object.c:87)
+==27510==    by 0x40040F5: _dl_map_object_from_fd (dl-load.c:1059)
+==27510==    by 0x400638B: _dl_map_object (dl-load.c:2605)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F519E1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== Syscall param ioctl(USBDEVFS_SUBMITURB).buffer.data points to uninitialised byte(s)
+==27510==    at 0x4EFC2B6: ioctl (syscall-template.S:81)
+==27510==    by 0x601A4FF: ??? (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510==  Address 0x70ca314 is 20 bytes inside a block of size 26 alloc'd
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6018DAB: libusb_control_transfer (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510==  Uninitialised value was created by a stack allocation
+==27510==    at 0x4D14854: freenect_fetch_reg_pad_info (in /usr/local/lib/libfreenect.so.0.5.2)
+==27510== 
+==27510== Conditional jump or move depends on uninitialised value(s)
+==27510==    at 0xB2CC: Freenect::FreenectDevice::setVideoFormat(freenect_video_format, freenect_resolution) (in /home/ubuntu/Kinect/Kinect and OpenCV/Test.out)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0xC2A9: MyFreenectDevice& Freenect::Freenect::createDevice<MyFreenectDevice>(int) (in /home/ubuntu/Kinect/Kinect and OpenCV/Test.out)
+==27510== 
+==27510== Conditional jump or move depends on uninitialised value(s)
+==27510==    at 0xB460: Freenect::FreenectDevice::setDepthFormat(freenect_depth_format, freenect_resolution) (in /home/ubuntu/Kinect/Kinect and OpenCV/Test.out)
+==27510==  Uninitialised value was created by a heap allocation
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0xC2A9: MyFreenectDevice& Freenect::Freenect::createDevice<MyFreenectDevice>(int) (in /home/ubuntu/Kinect/Kinect and OpenCV/Test.out)
+==27510== 
+==27510== Invalid read of size 4
+==27510==    at 0x4D794D0: cv::FeatureDetector::detect(cv::Mat const&, std::vector<cv::KeyPoint, std::allocator<cv::KeyPoint> >&, cv::Mat const&) const (in /usr/lib/libopencv_features2d.so.2.4.10)
+==27510==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==27510== 
+==27510== 
+==27510== Process terminating with default action of signal 11 (SIGSEGV)
+==27510==  Access not within mapped region at address 0x0
+==27510==    at 0x4D794D0: cv::FeatureDetector::detect(cv::Mat const&, std::vector<cv::KeyPoint, std::allocator<cv::KeyPoint> >&, cv::Mat const&) const (in /usr/lib/libopencv_features2d.so.2.4.10)
+==27510==  If you believe this happened as a result of a stack
+==27510==  overflow in your program's main thread (unlikely but
+==27510==  possible), you can try to increase the size of the
+==27510==  main thread stack using the --main-stacksize= flag.
+==27510==  The main thread stack size used in this run was 8388608.
+==27510== 
+==27510== HEAP SUMMARY:
+==27510==     in use at exit: 12,588,875 bytes in 9,627 blocks
+==27510==   total heap usage: 27,293 allocs, 17,666 frees, 14,558,589 bytes allocated
+==27510== 
+==27510== 1 bytes in 1 blocks are still reachable in loss record 1 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4EC6E37: strdup (strdup.c:42)
+==27510==    by 0x6F49A67: p11_kit_pin_register_callback (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 2 bytes in 1 blocks are still reachable in loss record 2 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6106099: _XlcCreateLC (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 2 bytes in 1 blocks are still reachable in loss record 3 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4EC6E37: strdup (strdup.c:42)
+==27510==    by 0x6103D6B: _XlcResolveLocaleName (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 3 bytes in 1 blocks are still reachable in loss record 4 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4EC6E37: strdup (strdup.c:42)
+==27510==    by 0x60EF06D: XOpenDisplay (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 4 bytes in 1 blocks are still reachable in loss record 5 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4916B75: CudaArch::CudaArch() (in /usr/lib/libopencv_core.so.2.4.10)
+==27510== 
+==27510== 4 bytes in 1 blocks are still reachable in loss record 6 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4916377: std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) (in /usr/lib/libopencv_core.so.2.4.10)
+==27510== 
+==27510== 4 bytes in 1 blocks are still reachable in loss record 7 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4F829BF: ??? (in /usr/local/cuda-6.5/targets/armv7-linux-gnueabihf/lib/libcudart.so.6.5.34)
+==27510== 
+==27510== 4 bytes in 1 blocks are still reachable in loss record 8 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4830E5B: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x7436163: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 4 bytes in 1 blocks are still reachable in loss record 9 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4EC6E37: strdup (strdup.c:42)
+==27510==    by 0x6C91971: ??? (in /lib/arm-linux-gnueabihf/libudev.so.1.3.5)
+==27510== 
+==27510== 4 bytes in 1 blocks are still reachable in loss record 10 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6106597: _XrmDefaultInitParseInfo (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 4 bytes in 1 blocks are still reachable in loss record 11 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60FD03B: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 7 bytes in 1 blocks are still reachable in loss record 12 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4EC6E37: strdup (strdup.c:42)
+==27510==    by 0x610625F: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 8 bytes in 1 blocks are still reachable in loss record 13 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x743CD5F: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 8 bytes in 1 blocks are still reachable in loss record 14 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x7436663: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 8 bytes in 1 blocks are still reachable in loss record 15 of 227
+==27510==    at 0x4830DC0: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x61046D3: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 8 bytes in 1 blocks are still reachable in loss record 16 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6D14EE7: ??? (in /usr/lib/arm-linux-gnueabihf/libxcb.so.1.1.0)
+==27510== 
+==27510== 8 bytes in 1 blocks are still reachable in loss record 17 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x64814FF: ??? (in /usr/lib/arm-linux-gnueabihf/libXext.so.6.4.0)
+==27510== 
+==27510== 8 bytes in 1 blocks are still reachable in loss record 18 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6437523: ??? (in /usr/lib/arm-linux-gnueabihf/libXi.so.6.1.0)
+==27510== 
+==27510== 8 bytes in 1 blocks are still reachable in loss record 19 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60FB6FD: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 8 bytes in 2 blocks are still reachable in loss record 20 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4CDC737: ??? (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 8 bytes in 2 blocks are still reachable in loss record 21 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6105127: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 9 bytes in 1 blocks are still reachable in loss record 22 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x610AEC7: _XlcDefaultMapModifiers (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 10 bytes in 1 blocks are still reachable in loss record 23 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6457F3B: XcursorSetTheme (in /usr/lib/arm-linux-gnueabihf/libXcursor.so.1.0.2)
+==27510== 
+==27510== 12 bytes in 1 blocks are still reachable in loss record 24 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x743390F: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 12 bytes in 1 blocks are still reachable in loss record 25 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x610448B: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 12 bytes in 1 blocks are still reachable in loss record 26 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x610B029: _XOpenLC (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 12 bytes in 1 blocks are still reachable in loss record 27 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60F8AFB: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 12 bytes in 1 blocks are still reachable in loss record 28 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60FA00F: XAddConnectionWatch (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 12 bytes in 1 blocks are indirectly lost in loss record 29 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x54E6EAF: g_malloc (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 13 bytes in 1 blocks are still reachable in loss record 30 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4EC6E37: strdup (strdup.c:42)
+==27510==    by 0x743C44D: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 16 bytes in 1 blocks are still reachable in loss record 31 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4F82A8B: ??? (in /usr/local/cuda-6.5/targets/armv7-linux-gnueabihf/lib/libcudart.so.6.5.34)
+==27510== 
+==27510== 16 bytes in 1 blocks are still reachable in loss record 32 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6F49A49: p11_kit_pin_register_callback (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 16 bytes in 1 blocks are still reachable in loss record 33 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6F50297: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 16 bytes in 1 blocks are still reachable in loss record 34 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4830E5B: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x6D14CA3: ??? (in /usr/lib/arm-linux-gnueabihf/libxcb.so.1.1.0)
+==27510== 
+==27510== 16 bytes in 1 blocks are still reachable in loss record 35 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x641F20B: XRenderFindDisplay (in /usr/lib/arm-linux-gnueabihf/libXrender.so.1.3.0)
+==27510== 
+==27510== 16 bytes in 1 blocks are still reachable in loss record 36 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60FBA73: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 16 bytes in 1 blocks are still reachable in loss record 37 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60FCCDD: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 16 bytes in 2 blocks are still reachable in loss record 38 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x491D3F1: cv::Mutex::Mutex() (in /usr/lib/libopencv_core.so.2.4.10)
+==27510== 
+==27510== 20 bytes in 1 blocks are still reachable in loss record 39 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6078F7F: _dlerror_run (dlerror.c:141)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 20 bytes in 1 blocks are still reachable in loss record 40 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x4843571: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/gnome-keyring-pkcs11.so)
+==27510== 
+==27510== 20 bytes in 1 blocks are still reachable in loss record 41 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x61036C5: _XlcCreateLocaleDataBase (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 20 bytes in 1 blocks are still reachable in loss record 42 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x644757F: ??? (in /usr/lib/arm-linux-gnueabihf/libXrandr.so.2.2.0)
+==27510== 
+==27510== 20 bytes in 1 blocks are still reachable in loss record 43 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x61BA0C3: XFixesFindDisplay (in /usr/lib/arm-linux-gnueabihf/libXfixes.so.3.1.0)
+==27510== 
+==27510== 20 bytes in 1 blocks are still reachable in loss record 44 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6464B1F: XCompositeFindDisplay (in /usr/lib/arm-linux-gnueabihf/libXcomposite.so.1.0.0)
+==27510== 
+==27510== 20 bytes in 1 blocks are still reachable in loss record 45 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x646FA83: XDamageFindDisplay (in /usr/lib/arm-linux-gnueabihf/libXdamage.so.1.1.0)
+==27510== 
+==27510== 20 bytes in 2 blocks are still reachable in loss record 46 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6C27F4F: ??? (in /usr/lib/arm-linux-gnueabihf/libgnutls.so.26.22.6)
+==27510== 
+==27510== 21 bytes in 1 blocks are still reachable in loss record 47 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60EF2E5: XOpenDisplay (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 24 bytes in 1 blocks are still reachable in loss record 48 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCFA73: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 24 bytes in 1 blocks are still reachable in loss record 49 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCFB61: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 24 bytes in 1 blocks are still reachable in loss record 50 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCFC51: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 24 bytes in 1 blocks are still reachable in loss record 51 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCFD41: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 24 bytes in 1 blocks are still reachable in loss record 52 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCFE2F: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 24 bytes in 1 blocks are still reachable in loss record 53 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCFF1D: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 24 bytes in 1 blocks are still reachable in loss record 54 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CD000B: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 24 bytes in 1 blocks are still reachable in loss record 55 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6C91965: ??? (in /lib/arm-linux-gnueabihf/libudev.so.1.3.5)
+==27510== 
+==27510== 24 bytes in 1 blocks are still reachable in loss record 56 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0xDC7F: __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<int const, Freenect::FreenectDevice*> > >::allocate(unsigned int, void const*) (in /home/ubuntu/Kinect/Kinect and OpenCV/Test.out)
+==27510== 
+==27510== 24 bytes in 1 blocks are still reachable in loss record 57 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6201043: cairo_font_options_copy (in /usr/lib/arm-linux-gnueabihf/libcairo.so.2.11301.0)
+==27510== 
+==27510== 24 bytes in 2 blocks are still reachable in loss record 58 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x648162B: XextCreateExtension (in /usr/lib/arm-linux-gnueabihf/libXext.so.6.4.0)
+==27510== 
+==27510== 24 bytes in 3 blocks are still reachable in loss record 59 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4CDC6B1: ImplMutex::init() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 25 bytes in 4 blocks are possibly lost in loss record 60 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x601AFE1: ??? (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 28 bytes in 1 blocks are still reachable in loss record 61 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4F0B9CF: __vasprintf_chk (vasprintf_chk.c:80)
+==27510==    by 0x5510C4B: g_vasprintf (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 28 bytes in 2 blocks are still reachable in loss record 62 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F3F1F5: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 28 bytes in 7 blocks are still reachable in loss record 63 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x55111B3: ??? (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 31 bytes in 5 blocks are still reachable in loss record 64 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x601AFE1: ??? (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 32 bytes in 1 blocks are still reachable in loss record 65 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x491CF25: cvRegisterModule (in /usr/lib/libopencv_core.so.2.4.10)
+==27510== 
+==27510== 32 bytes in 1 blocks are still reachable in loss record 66 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60F29DB: _XrmInternalStringToQuark (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 32 bytes in 1 blocks are still reachable in loss record 67 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6D14973: ??? (in /usr/lib/arm-linux-gnueabihf/libxcb.so.1.1.0)
+==27510== 
+==27510== 32 bytes in 1 blocks are still reachable in loss record 68 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60FD09F: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 32 bytes in 2 blocks are still reachable in loss record 69 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60FCE19: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 32 (20 direct, 12 indirect) bytes in 2 blocks are definitely lost in loss record 70 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x54E6EAF: g_malloc (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 35 bytes in 1 blocks are still reachable in loss record 71 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4EC6E37: strdup (strdup.c:42)
+==27510==    by 0x743C415: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 36 bytes in 1 blocks are still reachable in loss record 72 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x74362B3: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 36 bytes in 1 blocks are still reachable in loss record 73 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60EF219: XOpenDisplay (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 37 bytes in 1 blocks are still reachable in loss record 74 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4846F81: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/gnome-keyring-pkcs11.so)
+==27510== 
+==27510== 40 bytes in 1 blocks are still reachable in loss record 75 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x49161DD: std::vector<cudaDeviceProp*, std::allocator<cudaDeviceProp*> >::resize(unsigned int, cudaDeviceProp*) (in /usr/lib/libopencv_core.so.2.4.10)
+==27510== 
+==27510== 40 bytes in 1 blocks are still reachable in loss record 76 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x743C393: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 40 bytes in 1 blocks are still reachable in loss record 77 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60F9C51: _XPollfdCacheInit (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 40 bytes in 1 blocks are definitely lost in loss record 78 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6017D03: ??? (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 44 bytes in 1 blocks are still reachable in loss record 79 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4F829CF: ??? (in /usr/local/cuda-6.5/targets/armv7-linux-gnueabihf/lib/libcudart.so.6.5.34)
+==27510== 
+==27510== 44 bytes in 1 blocks are still reachable in loss record 80 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4D12F6F: freenect_init (in /usr/local/lib/libfreenect.so.0.5.2)
+==27510== 
+==27510== 44 bytes in 1 blocks are still reachable in loss record 81 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6C916B5: udev_new (in /lib/arm-linux-gnueabihf/libudev.so.1.3.5)
+==27510== 
+==27510== 47 bytes in 5 blocks are still reachable in loss record 82 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6102033: _XlcAddCT (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 48 bytes in 1 blocks are still reachable in loss record 83 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60F86ED: _XConnectXCB (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 48 bytes in 1 blocks are still reachable in loss record 84 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60F86F9: _XConnectXCB (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 48 bytes in 1 blocks are still reachable in loss record 85 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x543FF69: ??? (in /usr/lib/arm-linux-gnueabihf/libgdk-x11-2.0.so.0.2400.23)
+==27510== 
+==27510== 48 bytes in 3 blocks are still reachable in loss record 86 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x743F4C7: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 48 bytes in 3 blocks are still reachable in loss record 87 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x743FEA5: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 56 bytes in 1 blocks are still reachable in loss record 88 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4F82397: ??? (in /usr/local/cuda-6.5/targets/armv7-linux-gnueabihf/lib/libcudart.so.6.5.34)
+==27510== 
+==27510== 57 bytes in 6 blocks are still reachable in loss record 89 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x743F9A5: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 60 bytes in 5 blocks are still reachable in loss record 90 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6481555: ??? (in /usr/lib/arm-linux-gnueabihf/libXext.so.6.4.0)
+==27510== 
+==27510== 64 bytes in 1 blocks are still reachable in loss record 91 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCF4EF: std::vector<cv::Ptr<cv::BaseImageDecoder>, std::allocator<cv::Ptr<cv::BaseImageDecoder> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<cv::Ptr<cv::BaseImageDecoder>*, std::vector<cv::Ptr<cv::BaseImageDecoder>, std::allocator<cv::Ptr<cv::BaseImageDecoder> > > >, cv::Ptr<cv::BaseImageDecoder> const&) (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 64 bytes in 1 blocks are still reachable in loss record 92 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCF857: std::vector<cv::Ptr<cv::BaseImageEncoder>, std::allocator<cv::Ptr<cv::BaseImageEncoder> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<cv::Ptr<cv::BaseImageEncoder>*, std::vector<cv::Ptr<cv::BaseImageEncoder>, std::allocator<cv::Ptr<cv::BaseImageEncoder> > > >, cv::Ptr<cv::BaseImageEncoder> const&) (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 64 bytes in 1 blocks are still reachable in loss record 93 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4830E5B: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x6F50197: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 64 bytes in 1 blocks are still reachable in loss record 94 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60F8669: _XConnectXCB (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 64 bytes in 2 blocks are still reachable in loss record 95 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x551106F: ??? (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 64 bytes in 3 blocks are still reachable in loss record 96 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x643800D: XOpenDevice (in /usr/lib/arm-linux-gnueabihf/libXi.so.6.1.0)
+==27510== 
+==27510== 68 bytes in 1 blocks are still reachable in loss record 97 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x4F82C37: ??? (in /usr/local/cuda-6.5/targets/armv7-linux-gnueabihf/lib/libcudart.so.6.5.34)
+==27510== 
+==27510== 72 bytes in 1 blocks are still reachable in loss record 98 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4830E5B: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x743E7B7: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 72 bytes in 1 blocks are still reachable in loss record 99 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60EBCD1: XAddExtension (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 80 bytes in 1 blocks are still reachable in loss record 100 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60EF391: XOpenDisplay (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 80 bytes in 5 blocks are possibly lost in loss record 101 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6018715: ??? (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 84 bytes in 1 blocks are still reachable in loss record 102 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x61044A1: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 84 bytes in 1 blocks are still reachable in loss record 103 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60EF4A5: XOpenDisplay (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 88 bytes in 1 blocks are still reachable in loss record 104 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCFDB7: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 92 bytes in 1 blocks are still reachable in loss record 105 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCFAEB: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 92 bytes in 1 blocks are still reachable in loss record 106 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCFF93: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 92 bytes in 2 blocks are still reachable in loss record 107 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x7440C11: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 96 bytes in 1 blocks are still reachable in loss record 108 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6104497: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 96 bytes in 2 blocks are still reachable in loss record 109 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x61046BB: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 96 bytes in 4 blocks are still reachable in loss record 110 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x5511019: ??? (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 96 bytes in 6 blocks are still reachable in loss record 111 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6481659: XextAddDisplay (in /usr/lib/arm-linux-gnueabihf/libXext.so.6.4.0)
+==27510== 
+==27510== 100 bytes in 1 blocks are still reachable in loss record 112 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x612D87B: XkbUseExtension (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 100 bytes in 1 blocks are still reachable in loss record 113 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6439665: ??? (in /usr/lib/arm-linux-gnueabihf/libXi.so.6.1.0)
+==27510== 
+==27510== 101 bytes in 6 blocks are still reachable in loss record 114 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60FCF45: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 104 bytes in 1 blocks are still reachable in loss record 115 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x64814BF: ??? (in /usr/lib/arm-linux-gnueabihf/libXext.so.6.4.0)
+==27510== 
+==27510== 104 bytes in 2 blocks are still reachable in loss record 116 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6015463: libusb_open (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 106 bytes in 11 blocks are still reachable in loss record 117 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4EC6E37: strdup (strdup.c:42)
+==27510==    by 0x60EBC6B: XInitExtension (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 108 bytes in 1 blocks are still reachable in loss record 118 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60EF735: XOpenDisplay (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 112 bytes in 1 blocks are still reachable in loss record 119 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCFEA5: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 112 bytes in 1 blocks are still reachable in loss record 120 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60EF32D: XOpenDisplay (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 113 bytes in 2 blocks are still reachable in loss record 121 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4003F1F: local_strdup (dl-load.c:162)
+==27510==    by 0x4006335: _dl_map_object (dl-load.c:2538)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 113 bytes in 2 blocks are still reachable in loss record 122 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x400803D: _dl_new_object (dl-object.c:165)
+==27510==    by 0x40040F5: _dl_map_object_from_fd (dl-load.c:1059)
+==27510==    by 0x400638B: _dl_map_object (dl-load.c:2605)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 124 bytes in 31 blocks are possibly lost in loss record 123 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x601A3B7: ??? (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 128 bytes in 1 blocks are still reachable in loss record 124 of 227
+==27510==    at 0x4830DC0: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x4842A8B: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/gnome-keyring-pkcs11.so)
+==27510== 
+==27510== 128 bytes in 2 blocks are still reachable in loss record 125 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4D15C7D: fnusb_start_iso (in /usr/local/lib/libfreenect.so.0.5.2)
+==27510== 
+==27510== 140 bytes in 5 blocks are still reachable in loss record 126 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x74400D5: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 142 bytes in 18 blocks are still reachable in loss record 127 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x61029B7: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 144 bytes in 3 blocks are still reachable in loss record 128 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4830E5B: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x4842A8B: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/gnome-keyring-pkcs11.so)
+==27510== 
+==27510== 144 bytes in 6 blocks are still reachable in loss record 129 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6C24C47: ??? (in /usr/lib/arm-linux-gnueabihf/libgnutls.so.26.22.6)
+==27510== 
+==27510== 144 bytes in 18 blocks are still reachable in loss record 130 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x61029A3: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 160 bytes in 1 blocks are possibly lost in loss record 131 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x400CC95: allocate_dtv (dl-tls.c:296)
+==27510==    by 0x400D147: _dl_allocate_tls (dl-tls.c:460)
+==27510==    by 0x4CFCAB7: pthread_create@@GLIBC_2.4 (allocatestack.c:589)
+==27510==    by 0x601C46B: ??? (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 160 bytes in 1 blocks are possibly lost in loss record 132 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x400CC95: allocate_dtv (dl-tls.c:296)
+==27510==    by 0x400D147: _dl_allocate_tls (dl-tls.c:460)
+==27510==    by 0x4CFCAB7: pthread_create@@GLIBC_2.4 (allocatestack.c:589)
+==27510==    by 0x551153D: ??? (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 160 bytes in 1 blocks are definitely lost in loss record 133 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x400CC95: allocate_dtv (dl-tls.c:296)
+==27510==    by 0x400D147: _dl_allocate_tls (dl-tls.c:460)
+==27510==    by 0x4CFCAB7: pthread_create@@GLIBC_2.4 (allocatestack.c:589)
+==27510==    by 0xB737: Freenect::Freenect::Freenect() (in /home/ubuntu/Kinect/Kinect and OpenCV/Test.out)
+==27510== 
+==27510== 160 bytes in 1 blocks are definitely lost in loss record 134 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x400CC95: allocate_dtv (dl-tls.c:296)
+==27510==    by 0x400D147: _dl_allocate_tls (dl-tls.c:460)
+==27510==    by 0x4CFCAB7: pthread_create@@GLIBC_2.4 (allocatestack.c:589)
+==27510==    by 0x551153D: ??? (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 180 bytes in 5 blocks are still reachable in loss record 135 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x74400F1: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 192 bytes in 2 blocks are still reachable in loss record 136 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x400C0AF: _dl_check_map_versions (dl-version.c:293)
+==27510==    by 0x400E28B: dl_open_worker (dl-open.c:278)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 192 bytes in 3 blocks are still reachable in loss record 137 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4830E5B: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x743F3C7: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 192 bytes in 12 blocks are still reachable in loss record 138 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6F50C75: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 196 bytes in 7 blocks are still reachable in loss record 139 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F50EA5: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 216 bytes in 18 blocks are still reachable in loss record 140 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4EC6E37: strdup (strdup.c:42)
+==27510==    by 0x6103203: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 224 bytes in 1 blocks are still reachable in loss record 141 of 227
+==27510==    at 0x4830DC0: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x6C11915: _gnutls_ext_register (in /usr/lib/arm-linux-gnueabihf/libgnutls.so.26.22.6)
+==27510== 
+==27510== 252 bytes in 7 blocks are still reachable in loss record 142 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4F82FCF: ??? (in /usr/local/cuda-6.5/targets/armv7-linux-gnueabihf/lib/libcudart.so.6.5.34)
+==27510== 
+==27510== 252 bytes in 7 blocks are still reachable in loss record 143 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6F50EC1: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 256 bytes in 1 blocks are still reachable in loss record 144 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x493010F: std::vector<std::pair<std::string, cv::Algorithm* (*)()>, std::allocator<std::pair<std::string, cv::Algorithm* (*)()> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<std::string, cv::Algorithm* (*)()>*, std::vector<std::pair<std::string, cv::Algorithm* (*)()>, std::allocator<std::pair<std::string, cv::Algorithm* (*)()> > > >, std::pair<std::string, cv::Algorithm* (*)()> const&) (in /usr/lib/libopencv_core.so.2.4.10)
+==27510== 
+==27510== 256 bytes in 1 blocks are still reachable in loss record 145 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60EC407: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 274 bytes in 18 blocks are still reachable in loss record 146 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4EC6E37: strdup (strdup.c:42)
+==27510==    by 0x61032F1: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 280 bytes in 1 blocks are still reachable in loss record 147 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0xC2A9: MyFreenectDevice& Freenect::Freenect::createDevice<MyFreenectDevice>(int) (in /home/ubuntu/Kinect/Kinect and OpenCV/Test.out)
+==27510== 
+==27510== 282 bytes in 6 blocks are still reachable in loss record 148 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4003F1F: local_strdup (dl-load.c:162)
+==27510==    by 0x4006573: _dl_map_object (dl-load.c:2509)
+==27510==    by 0x400961D: openaux (dl-deps.c:63)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x4009789: _dl_map_object_deps (dl-deps.c:254)
+==27510==    by 0x400DF05: dl_open_worker (dl-open.c:272)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510== 
+==27510== 282 bytes in 6 blocks are still reachable in loss record 149 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x400803D: _dl_new_object (dl-object.c:165)
+==27510==    by 0x40040F5: _dl_map_object_from_fd (dl-load.c:1059)
+==27510==    by 0x400638B: _dl_map_object (dl-load.c:2605)
+==27510==    by 0x400961D: openaux (dl-deps.c:63)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x4009789: _dl_map_object_deps (dl-deps.c:254)
+==27510==    by 0x400DF05: dl_open_worker (dl-open.c:272)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510== 
+==27510== 288 bytes in 6 blocks are still reachable in loss record 150 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x551110D: ??? (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 296 bytes in 14 blocks are still reachable in loss record 151 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F50797: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 304 bytes in 1 blocks are still reachable in loss record 152 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x610368B: _XlcCreateLocaleDataBase (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 308 bytes in 39 blocks are possibly lost in loss record 153 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4830E5B: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x54E6F2B: g_realloc (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 313 bytes in 18 blocks are still reachable in loss record 154 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x543FE55: ??? (in /usr/lib/arm-linux-gnueabihf/libgdk-x11-2.0.so.0.2400.23)
+==27510== 
+==27510== 320 bytes in 20 blocks are still reachable in loss record 155 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x49310BD: cv::AlgorithmInfo::AlgorithmInfo(std::string const&, cv::Algorithm* (*)()) (in /usr/lib/libopencv_core.so.2.4.10)
+==27510== 
+==27510== 332 bytes in 1 blocks are still reachable in loss record 156 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6457B31: _XcursorGetDisplayInfo (in /usr/lib/arm-linux-gnueabihf/libXcursor.so.1.0.2)
+==27510== 
+==27510== 335 bytes in 5 blocks are still reachable in loss record 157 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4003F1F: local_strdup (dl-load.c:162)
+==27510==    by 0x4006335: _dl_map_object (dl-load.c:2538)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x60B71DD: g_module_open (in /usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0.4002.0)
+==27510== 
+==27510== 335 bytes in 5 blocks are still reachable in loss record 158 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x400803D: _dl_new_object (dl-object.c:165)
+==27510==    by 0x40040F5: _dl_map_object_from_fd (dl-load.c:1059)
+==27510==    by 0x400638B: _dl_map_object (dl-load.c:2605)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x60B71DD: g_module_open (in /usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0.4002.0)
+==27510== 
+==27510== 344 bytes in 1 blocks are still reachable in loss record 159 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6015CAD: libusb_init (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 352 bytes in 44 blocks are still reachable in loss record 160 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x54402C9: ??? (in /usr/lib/arm-linux-gnueabihf/libgdk-x11-2.0.so.0.2400.23)
+==27510== 
+==27510== 360 bytes in 18 blocks are still reachable in loss record 161 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x61031F9: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 383 bytes in 30 blocks are still reachable in loss record 162 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x50FA185: jas_strdup (in /usr/lib/arm-linux-gnueabihf/libjasper.so.1.0.0)
+==27510== 
+==27510== 400 bytes in 50 blocks are still reachable in loss record 163 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x61022A1: _XlcAddCharSet (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 400 bytes in 4 blocks are possibly lost in loss record 164 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6014F2B: ??? (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 460 bytes in 1 blocks are still reachable in loss record 165 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6C94C01: ??? (in /lib/arm-linux-gnueabihf/libudev.so.1.3.5)
+==27510== 
+==27510== 500 bytes in 5 blocks are still reachable in loss record 166 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6014F2B: ??? (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 512 bytes in 1 blocks are still reachable in loss record 167 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6F52081: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 520 bytes in 1 blocks are still reachable in loss record 168 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x4E97891: __new_exitfn (cxa_atexit.c:101)
+==27510==    by 0x4E978FD: __internal_atexit (cxa_atexit.c:35)
+==27510==    by 0x400B20D: call_init (dl-init.c:78)
+==27510==    by 0x400B29F: _dl_init (dl-init.c:126)
+==27510==    by 0x4000BF1: ??? (in /lib/arm-linux-gnueabihf/ld-2.19.so)
+==27510== 
+==27510== 520 bytes in 1 blocks are still reachable in loss record 169 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x4E97891: __new_exitfn (cxa_atexit.c:101)
+==27510==    by 0x4E978FD: __internal_atexit (cxa_atexit.c:35)
+==27510==    by 0x50F8A15: jas_init (in /usr/lib/arm-linux-gnueabihf/libjasper.so.1.0.0)
+==27510== 
+==27510== 600 bytes in 6 blocks are possibly lost in loss record 170 of 227
+==27510==    at 0x4830DC0: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x54E6F2B: g_realloc (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 633 bytes in 49 blocks are still reachable in loss record 171 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x610238D: _XlcCreateDefaultCharSet (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 696 bytes in 1 blocks are still reachable in loss record 172 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4D13023: freenect_open_device (in /usr/local/lib/libfreenect.so.0.5.2)
+==27510== 
+==27510== 704 bytes in 22 blocks are still reachable in loss record 173 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x610264F: _XlcSetConverter (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 712 bytes in 2 blocks are still reachable in loss record 174 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6F47ADB: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 792 bytes in 11 blocks are still reachable in loss record 175 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60EBC61: XInitExtension (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 802 bytes in 44 blocks are still reachable in loss record 176 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x543FD03: ??? (in /usr/lib/arm-linux-gnueabihf/libgdk-x11-2.0.so.0.2400.23)
+==27510== 
+==27510== 880 bytes in 44 blocks are still reachable in loss record 177 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x543FCF3: ??? (in /usr/lib/arm-linux-gnueabihf/libgdk-x11-2.0.so.0.2400.23)
+==27510== 
+==27510== 976 bytes in 11 blocks are still reachable in loss record 178 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x400C0AF: _dl_check_map_versions (dl-version.c:293)
+==27510==    by 0x400E28B: dl_open_worker (dl-open.c:278)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x60B71DD: g_module_open (in /usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0.4002.0)
+==27510== 
+==27510== 984 bytes in 41 blocks are still reachable in loss record 179 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x5510F6D: ??? (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 1,028 bytes in 50 blocks are still reachable in loss record 180 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6102355: _XlcCreateDefaultCharSet (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 1,102 bytes in 34 blocks are possibly lost in loss record 181 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4E2A189: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.19)
+==27510== 
+==27510== 1,160 bytes in 1 blocks are still reachable in loss record 182 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCF9F3: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 1,160 bytes in 1 blocks are still reachable in loss record 183 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCFCC9: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 1,164 bytes in 1 blocks are still reachable in loss record 184 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4CCFBD9: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/lib/libopencv_highgui.so.2.4.10)
+==27510== 
+==27510== 1,165 bytes in 43 blocks are still reachable in loss record 185 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60EC44D: _XUpdateAtomCache (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 1,345 bytes in 2 blocks are still reachable in loss record 186 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x4007E81: _dl_new_object (dl-object.c:75)
+==27510==    by 0x40040F5: _dl_map_object_from_fd (dl-load.c:1059)
+==27510==    by 0x400638B: _dl_map_object (dl-load.c:2605)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x6F47BBD: ??? (in /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0)
+==27510== 
+==27510== 1,631 bytes in 50 blocks are still reachable in loss record 187 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6101FC1: _XlcAddCT (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 1,736 bytes in 1 blocks are still reachable in loss record 188 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4D79E1B: ??? (in /usr/lib/libopencv_features2d.so.2.4.10)
+==27510== 
+==27510== 1,924 bytes in 1 blocks are still reachable in loss record 189 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x641F689: XRenderQueryFormats (in /usr/lib/arm-linux-gnueabihf/libXrender.so.1.3.0)
+==27510== 
+==27510== 2,040 bytes in 1 blocks are definitely lost in loss record 190 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x54E6EEF: g_malloc0 (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 2,048 bytes in 1 blocks are still reachable in loss record 191 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60F29A7: _XrmInternalStringToQuark (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 2,048 bytes in 1 blocks are still reachable in loss record 192 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6103739: _XlcCreateLocaleDataBase (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 2,372 bytes in 1 blocks are still reachable in loss record 193 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60EF05F: XOpenDisplay (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 2,400 bytes in 50 blocks are still reachable in loss record 194 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x610232F: _XlcCreateDefaultCharSet (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 2,448 bytes in 42 blocks are still reachable in loss record 195 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6EC66F9: ??? (in /lib/arm-linux-gnueabihf/libgcrypt.so.11.8.2)
+==27510== 
+==27510== 2,608 bytes in 105 blocks are possibly lost in loss record 196 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x54E6EAF: g_malloc (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 2,804 bytes in 1 blocks are still reachable in loss record 197 of 227
+==27510==    at 0x4830DC0: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x6D12FE7: xcb_connect_to_fd (in /usr/lib/arm-linux-gnueabihf/libxcb.so.1.1.0)
+==27510== 
+==27510== 2,994 bytes in 136 blocks are still reachable in loss record 198 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6F2C59B: ??? (in /usr/lib/arm-linux-gnueabihf/libtasn1.so.6.2.0)
+==27510== 
+==27510== 3,415 bytes in 5 blocks are still reachable in loss record 199 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x4007E81: _dl_new_object (dl-object.c:75)
+==27510==    by 0x40040F5: _dl_map_object_from_fd (dl-load.c:1059)
+==27510==    by 0x400638B: _dl_map_object (dl-load.c:2605)
+==27510==    by 0x400DEC7: dl_open_worker (dl-open.c:235)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x6078F47: _dlerror_run (dlerror.c:163)
+==27510==    by 0x6078B81: dlopen@@GLIBC_2.4 (dlopen.c:87)
+==27510==    by 0x60B71DD: g_module_open (in /usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0.4002.0)
+==27510== 
+==27510== 3,456 bytes in 2 blocks are still reachable in loss record 200 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60EF4CF: XOpenDisplay (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 3,584 bytes in 32 blocks are still reachable in loss record 201 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60E4EDB: XCreateGC (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 3,804 bytes in 6 blocks are still reachable in loss record 202 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x4007E81: _dl_new_object (dl-object.c:75)
+==27510==    by 0x40040F5: _dl_map_object_from_fd (dl-load.c:1059)
+==27510==    by 0x400638B: _dl_map_object (dl-load.c:2605)
+==27510==    by 0x400961D: openaux (dl-deps.c:63)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x4009789: _dl_map_object_deps (dl-deps.c:254)
+==27510==    by 0x400DF05: dl_open_worker (dl-open.c:272)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510==    by 0x400DA8D: _dl_open (dl-open.c:661)
+==27510==    by 0x6078AF7: dlopen_doit (dlopen.c:66)
+==27510==    by 0x400B13F: _dl_catch_error (dl-error.c:187)
+==27510== 
+==27510== 4,096 bytes in 1 blocks are still reachable in loss record 203 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0xD529: __gnu_cxx::new_allocator<unsigned short>::allocate(unsigned int, void const*) (in /home/ubuntu/Kinect/Kinect and OpenCV/Test.out)
+==27510== 
+==27510== 4,096 bytes in 4 blocks are possibly lost in loss record 204 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4830E5B: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x601B093: ??? (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 5,060 bytes in 115 blocks are still reachable in loss record 205 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4F8338F: ??? (in /usr/local/cuda-6.5/targets/armv7-linux-gnueabihf/lib/libcudart.so.6.5.34)
+==27510== 
+==27510== 5,120 bytes in 5 blocks are still reachable in loss record 206 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4830E5B: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x601B093: ??? (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 5,180 bytes in 5 blocks are still reachable in loss record 207 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x6D5E503: ??? (in /usr/lib/arm-linux-gnueabihf/libpixman-1.so.0.30.2)
+==27510== 
+==27510== 7,316 bytes in 31 blocks are possibly lost in loss record 208 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x601A435: ??? (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 8,176 bytes in 1 blocks are still reachable in loss record 209 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60F26C5: ??? (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 8,888 bytes in 263 blocks are possibly lost in loss record 210 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x54E6EEF: g_malloc0 (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 9,856 bytes in 32 blocks are possibly lost in loss record 211 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6017803: libusb_alloc_transfer (in /lib/arm-linux-gnueabihf/libusb-1.0.so.0.1.0)
+==27510== 
+==27510== 10,400 bytes in 100 blocks are still reachable in loss record 212 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x60FA8DF: _XEnq (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 11,384 bytes in 329 blocks are still reachable in loss record 213 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4830E5B: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x54E6F2B: g_realloc (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 11,880 bytes in 497 blocks are still reachable in loss record 214 of 227
+==27510==    at 0x5493040: g_type_create_instance (in /usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0.4002.0)
+==27510== 
+==27510== 16,384 bytes in 1 blocks are still reachable in loss record 215 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x60EF1F1: XOpenDisplay (in /usr/lib/arm-linux-gnueabihf/libX11.so.6.3.0)
+==27510== 
+==27510== 17,224 bytes in 247 blocks are still reachable in loss record 216 of 227
+==27510==    at 0x4830DC0: realloc (vg_replace_malloc.c:688)
+==27510==    by 0x54E6F2B: g_realloc (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 21,024 bytes in 1 blocks are still reachable in loss record 217 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6D12ED3: xcb_connect_to_fd (in /usr/lib/arm-linux-gnueabihf/libxcb.so.1.1.0)
+==27510== 
+==27510== 28,000 bytes in 1 blocks are still reachable in loss record 218 of 227
+==27510==    at 0x482EA34: operator new(unsigned int) (vg_replace_malloc.c:314)
+==27510==    by 0x4D77B31: cv::GridAdaptedFeatureDetector::detectImpl(cv::Mat const&, std::vector<cv::KeyPoint, std::allocator<cv::KeyPoint> >&, cv::Mat const&) const (in /usr/lib/libopencv_features2d.so.2.4.10)
+==27510== 
+==27510== 56,260 bytes in 497 blocks are still reachable in loss record 219 of 227
+==27510==    at 0x549300A: g_type_create_instance (in /usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0.4002.0)
+==27510== 
+==27510== 63,352 bytes in 1 blocks are still reachable in loss record 220 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x7436301: ??? (in /usr/lib/arm-linux-gnueabihf/pkcs11/p11-kit-trust.so)
+==27510== 
+==27510== 97,552 bytes in 871 blocks are still reachable in loss record 221 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x6F2C3DF: ??? (in /usr/lib/arm-linux-gnueabihf/libtasn1.so.6.2.0)
+==27510== 
+==27510== 98,524 bytes in 1,298 blocks are still reachable in loss record 222 of 227
+==27510==    at 0x4830B68: calloc (vg_replace_malloc.c:619)
+==27510==    by 0x54E6EEF: g_malloc0 (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 100,263 bytes in 3,343 blocks are still reachable in loss record 223 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x54E6EAF: g_malloc (in /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4002.0)
+==27510== 
+==27510== 729,600 bytes in 2 blocks are still reachable in loss record 224 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4D13D4D: stream_init.isra.4 (in /usr/local/lib/libfreenect.so.0.5.2)
+==27510== 
+==27510== 983,040 bytes in 2 blocks are still reachable in loss record 225 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4D15C71: fnusb_start_iso (in /usr/local/lib/libfreenect.so.0.5.2)
+==27510== 
+==27510== 1,536,000 bytes in 2 blocks are still reachable in loss record 226 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x4D13D5B: stream_init.isra.4 (in /usr/local/lib/libfreenect.so.0.5.2)
+==27510== 
+==27510== 8,603,150 bytes in 38 blocks are possibly lost in loss record 227 of 227
+==27510==    at 0x482E364: malloc (vg_replace_malloc.c:292)
+==27510==    by 0x49D4DA1: cv::fastMalloc(unsigned int) (in /usr/lib/libopencv_core.so.2.4.10)
+==27510== 
+==27510== LEAK SUMMARY:
+==27510==    definitely lost: 2,420 bytes in 6 blocks
+==27510==    indirectly lost: 12 bytes in 1 blocks
+==27510==      possibly lost: 8,638,873 bytes in 598 blocks
+==27510==    still reachable: 3,875,454 bytes in 8,525 blocks
+==27510==         suppressed: 0 bytes in 0 blocks
+==27510== 
+==27510== For counts of detected and suppressed errors, rerun with: -v
+==27510== ERROR SUMMARY: 36 errors from 36 contexts (suppressed: 86 from 33)
